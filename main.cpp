@@ -25,6 +25,9 @@ constexpr double calcPi(unsigned long long n)
 }
 int main()
 {
-  std::cout << calcPi(15); //3.09134
+  for (unsigned long long i = 1; i <= 35; ++i)
+  {
+    std::cout << i << ") " << calcPi(i) << '\n';
+  }
   return 0;
 }
